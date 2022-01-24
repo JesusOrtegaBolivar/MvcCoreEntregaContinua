@@ -1,0 +1,15 @@
+﻿@model List<int>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["SALUDO"]</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <ul>
+        @foreach(int numero in Model)
+            {
+                <li>@numero</li>
+            }
+    </ul>
+</div>
